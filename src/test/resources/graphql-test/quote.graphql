@@ -1,0 +1,5 @@
+query quote($site: String!) {
+    quote(site: $site) {
+        price
+    }
+}

@@ -1,0 +1,5 @@
+query blogs {
+    blogs {
+        id title publishedDate  blogUser {name}
+    }
+}

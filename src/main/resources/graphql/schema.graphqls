@@ -1,0 +1,24 @@
+type Query {
+    blog(id: ID!): Blog
+    blogs:[Blog]
+    blogUsers:[BlogUser]
+    blogUser(id: ID!): BlogUser
+    quote(site: String!):Quote
+    quotes:[Quote]
+}
+type Quote{
+    site: String
+    price: Int
+}
+type Blog {
+    id: String
+    title: String
+    publishedDate: String
+    content:String
+    blogUser: BlogUser
+}
+type BlogUser {
+    id: String
+    name: String
+    createdDate: String
+}
